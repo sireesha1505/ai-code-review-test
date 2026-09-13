@@ -22,3 +22,7 @@ def process_users(users):
                 results.append(user)
 
     return results
+
+def find_user(user_id):
+    query = "SELECT * FROM users WHERE id = " + str(user_id)
+    return query
